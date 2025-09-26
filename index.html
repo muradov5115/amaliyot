@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mars Space — Kirish</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <div class="card">
+      <div class="brand">
+        <div class="logo">🔴</div>
+        <h1>MARS SPACE</h1>
+        <p class="tag">Insaytga kirish — faqat ruxsat etilgan foydalanuvchilar</p>
+      </div>
+      <form id="login-form" class="login-form" autocomplete="off">
+        <label for="username">Foydalanuvchi nomi</label>
+        <input id="username" name="username" type="text" placeholder="foydalanuvchi@misol.uz" required />
+        <label for="password">Parol</label>
+        <input id="password" name="password" type="password" placeholder="********" required />
+        <div class="row">
+          <button id="login-btn" type="submit">Kirish</button>
+          <button id="demo-btn" type="button" class="ghost">Demo ma'lumot</button>
+        </div>
+        <p id="message" class="message" aria-live="polite"></p>
+      </form>
+      <div id="welcome" class="welcome hidden">
+        <h2>Salom, Astronavt! 🚀</h2>
+        <p>Siz muvaffaqiyatli tizimga kirdingiz. Saytning asosiy sahifasi yuklanmoqda...</p>
+        <button id="logout">Chiqish</button>
+      </div>
+      <small class="note">
+        Eslatma: demo versiya — haqiqiy xavfsiz autentifikatsiya uchun server tarafdagi tekshiruv kerak.
+      </small>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
